@@ -1,0 +1,99 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .age-calculator {
+            background-color: #eaf2f8;
+            border: 2px solid #0b5c92;
+            border-radius: 8px;
+            padding: 25px;
+            width: 450px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .age-calculator h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .age-calculator p {
+            color: #34495e;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .input-grid label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .input-grid input[type="number"],
+        .input-grid input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .input-grid input[type="text"] {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .input-grid .note {
+            grid-column: 2;
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: -10px;
+        }
+        
+        .radio-buttons {
+            margin-bottom: 20px;
+        }
+
+        .radio-buttons label {
+            margin-right: 15px;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-calc {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn-stop, .btn-reset {
+            background-color: #f1f1f1;
+            color: #333;
+            border: 1px solid #bdc3c7;
+        }

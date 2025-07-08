@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Tuổi Của Bạn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="age-calculator">
+        <h2>Tính Tuổi Của Bạn</h2>
+        <p>Đây là công cụ tính tuổi của bạn online miễn phí. Với dịch vụ của chúng tôi, bạn có thể tính toán chính xác 100% tuổi của bạn từ từng giây, phút, giờ, ngày đến năm tuổi.</p>
+
+        <form id="ageForm">
+            <div class="input-grid">
+                <label for="year">Năm sinh:</label>
+                <input type="number" id="year" placeholder="VD: 1999" required>
+            </div>
+            <div class="input-grid">
+                <label for="month">Tháng sinh:</label>
+                <input type="number" id="month" placeholder="1-12" required>
+            </div>
+            <div class="input-grid">
+                <label for="day">Ngày sinh:</label>
+                <input type="number" id="day" placeholder="1-31" required>
+            </div>
+            <div class="input-grid">
+                <label for="hour">Giờ sinh:</label>
+                <input type="number" id="hour" placeholder="0-23">
+                <span class="note">(để trống nếu không biết)</span>
+            </div>
+            <div class="input-grid">
+                <label for="minute">Phút sinh:</label>
+                <input type="number" id="minute" placeholder="0-59">
+                 <span class="note">(để trống nếu không biết)</span>
+            </div>
+            <div class="input-grid">
+                <label for="second">Giây sinh:</label>
+                <input type="number" id="second" placeholder="0-59">
+                 <span class="note">(để trống nếu không biết)</span>
+            </div>
+
+            <div class="radio-buttons">
+                <input type="radio" id="approx" name="calc_type" value="approx" checked>
+                <label for="approx">Tương đối</label>
+                <input type="radio" id="exact" name="calc_type" value="exact">
+                <label for="exact">Chính xác</label>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn-calc" onclick="calculateAge()">Tính</button>
+                <button type="button" class="btn-stop">Dừng</button>
+                <button type="reset" class="btn-reset" onclick="resetForm()">Làm lại</button>
+            </div>
+        </form>
+
+        <div class="results">
+            <div class="input-grid">
+                <label>Bạn đã được</label>
+                <input type="text" id="result_years" readonly>
+                <label></label><span>năm tuổi</span>
+            </div>
+            <div class="input-grid">
+                <label>cũng như</label>
+                <input type="text" id="result_days" readonly>
+                <label></label><span>ngày tuổi</span>
+            </div>
+            <div class="input-grid">
+                <label>hoặc là</label>
+                <input type="text" id="result_hours" readonly>
+                 <label></label><span>giờ tuổi</span>
+            </div>
+            <div class="input-grid">
+                <label>hay là</label>
+                <input type="text" id="result_minutes" readonly>
+                 <label></label><span>phút tuổi</span>
+            </div>
+            <div class="input-grid">
+                <label>và</label>
+                <input type="text" id="result_seconds" readonly>
+                 <label></label><span>giây tuổi</span>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
